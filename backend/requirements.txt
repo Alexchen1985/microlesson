@@ -10,4 +10,4 @@ pydantic-settings==2.5.0
 python-dotenv==1.0.1
 aiofiles==24.1.0
 ffmpeg-python==0.2.0
-openai-whisper==20231117
+# whisper 暂不安装（Apple Silicon 需要特殊编译环境），后续可单独安装

@@ -4,7 +4,7 @@
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker, DeclarativeBase
 
-engine = create_engine("postgresql://postgres:postgres@localhost:5432/microke", pool_pre_ping=True)
+engine = create_engine("postgresql+psycopg://chenlei@localhost:5432/microke", pool_pre_ping=True)
 SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)
 
 
