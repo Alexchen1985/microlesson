@@ -13,15 +13,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="zh-CN">
-      <body className="min-h-screen bg-gray-50">
-        <nav className="bg-white shadow-sm border-b">
-          <div className="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
-            <h1 className="text-xl font-bold text-blue-600">微课工场</h1>
-            <div className="text-sm text-gray-500">高校教师专业微课制作平台</div>
-          </div>
-        </nav>
-        <main>{children}</main>
-      </body>
+      <body className="antialiased">{children}</body>
     </html>
   );
 }
